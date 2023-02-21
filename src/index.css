@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+.thin-scroll-bar ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.thin-scroll-bar ::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.thin-scroll-bar ::-webkit-scrollbar-thumb {
+  background-color: rgba(23, 35, 61, 0.2);
+  height: 50px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.thin-scroll-bar ::-webkit-scrollbar-thumb:hover,
+.thin-scroll-bar ::-webkit-scrollbar-thumb:active {
+  background: #d1d1d1;
+  border-right: 1px solid rgba(0, 0, 0, 0);
+  border-left: 1px solid rgba(0, 0, 0, 0);
+}
+
+.thin-scroll-bar ::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+.x-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-lc {
+  display: flex;
+  align-items: center;
+}

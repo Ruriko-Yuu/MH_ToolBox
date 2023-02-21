@@ -1,0 +1,54 @@
+{
+  "head": [
+    {
+      "rank": 1,
+      "name": "namea",
+      "skill": [
+        {
+          "key": 1,
+          "value": 5
+        },
+        {
+          "key": 3,
+          "value": 5
+        }
+      ],
+      "hole": 0,
+      "def": 10,
+      "eDef": {
+        "fire": 5,
+        "ice": -5,
+        "water": 5,
+        "electric": 5,
+        "gragon": -10
+      }
+    },
+    {
+      "rank": 1,
+      "name": "nameb",
+      "skill": [
+        {
+          "key": 1,
+          "value": 5
+        },
+        {
+          "key": 2,
+          "value": 5
+        }
+      ],
+      "hole": 3,
+      "def": 10,
+      "eDef": {
+        "fire": 5,
+        "ice": -5,
+        "water": 5,
+        "electric": 5,
+        "gragon": -10
+      }
+    }
+  ],
+  "body": [],
+  "hand": [],
+  "skirt": [],
+  "foot": []
+}

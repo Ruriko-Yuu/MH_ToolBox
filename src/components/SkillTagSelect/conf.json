@@ -1,0 +1,39 @@
+{
+  "skillList": [
+    {
+      "name": "name1",
+      "key": 1,
+      "type": "atk",
+      "teamMark": "a",
+      "desc": "empty"
+    },
+    {
+      "name": "name2",
+      "key": 2,
+      "type": "atk",
+      "teamMark": "a",
+      "desc": "empty"
+    },
+    {
+      "name": "name3",
+      "key": 3,
+      "type": "def",
+      "teamMark": "b",
+      "desc": "empty"
+    },
+    {
+      "name": "name4",
+      "key": 4,
+      "type": "def",
+      "teamMark": "c",
+      "desc": "empty"
+    },
+    {
+      "name": "name5",
+      "key": 5,
+      "type": "other",
+      "teamMark": "d",
+      "desc": "empty"
+    }
+  ]
+}
