@@ -1,4 +1,5 @@
 import { FC, memo, useState } from "react";
+import { CheckOutlined } from "@ant-design/icons";
 import { Button, Modal, Input, Tooltip, Tag, Collapse, Select } from "antd";
 import styled from "@emotion/styled";
 import SkillTagSelect from "../../components/SkillTagSelect/index";
@@ -10,12 +11,22 @@ const EquipmentSelectHTML = styled.div`
 `;
 
 const EquipmentUL = styled.ul`
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
   max-height: 225px;
   background-color: #f9f9f9;
   li {
-    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px 15px;
     cursor: pointer;
+    &.active {
+      color: #6cf;
+    }
+    &:hover {
+      background-color: #eef;
+      color: #33f;
+    }
   }
 `;
 interface defEquipmentType {
@@ -44,6 +55,8 @@ const EquipmentSelect: FC<{
   >([]);
   const [nameSearchVal, setNameSearchVal] = useState("");
   const [holeSearchVal, setHoleSearchVal] = useState();
+  const [equipmentSelectVal, setEquipmentSelectVal] =
+    useState<defEquipmentType>();
   const showModal = () => {
     setIsModalOpen(true);
   };
@@ -156,7 +169,17 @@ const EquipmentSelect: FC<{
                 placement="topLeft"
                 title={cbEquipmentDetailHTML(ele)}
               >
-                <li>
+                <li
+                  onClick={() => {
+                    setEquipmentSelectVal(ele);
+                  }}
+                  className={`flex-sc ${
+                    equipmentSelectVal !== void 0 &&
+                    equipmentSelectVal.name === ele.name
+                      ? "active"
+                      : ""
+                  }`}
+                >
                   {nameSearchVal === "" ? (
                     ele.name
                   ) : (
@@ -169,6 +192,9 @@ const EquipmentSelect: FC<{
                         .join(nameSearchVal)}
                     </>
                   )}
+                  <i>
+                    <CheckOutlined />
+                  </i>
                 </li>
               </Tooltip>
             ))}
